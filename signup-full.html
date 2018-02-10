@@ -1,0 +1,774 @@
+<apex:page showHeader="false" applyHtmlTag="false" applyBodyTag="false" contentType="html-5.0" controller="connectsite" action="{!doinit}">
+    <html lang="en">
+
+    <head>
+        <!-- Title -->
+        <title>Connect Lawn - Contractor Signup</title>
+
+        <!-- Required Meta Tags Always Come First -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+
+        <!-- Favicon -->
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/favicon.ico" rel="shortcut icon"/>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik" rel="stylesheet"/>
+        <!-- CSS Global Compulsory -->
+        <!-- <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/bootstrap/bootstrap.min.css"/> -->
+        <!-- CSS Global Icons -->
+        <!-- <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/icon-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/icon-line/css/simple-line-icons.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/icon-etlinefont/style.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/icon-line-pro/style.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/icon-hs/style.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/animate.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/dzsparallaxer/dzsparallaxer.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/dzsparallaxer/dzsscroller/scroller.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/dzsparallaxer/advancedscroller/plugin.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/slick-carousel/slick/slick.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/hs-megamenu/src/hs.megamenu.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/hamburgers/hamburgers.min.css" rel="stylesheet"/> -->
+
+
+        <!-- CSS Unify -->
+        <!-- <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/css/unify-core.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/css/unify-components.css" rel="stylesheet"/>
+        <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/css/unify-globals.css" rel="stylesheet"/> -->
+
+        <!-- CSS Implementing Plugins -->
+        <!-- <link  rel="stylesheet" href="assets/vendor/jquery-ui/themes/base/jquery-ui.min.css"> -->
+
+        <!-- CSS Customization -->
+        <!-- <link href="https://s3-us-west-1.amazonaws.com/connectsite/assets/css/custom.css" rel="stylesheet"/> -->
+
+
+
+
+        <!-- CSS Global Compulsory -->
+        <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css"/>
+        <!-- CSS Global Icons -->
+        <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+        <link href="assets/vendor/icon-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="assets/vendor/icon-line/css/simple-line-icons.css" rel="stylesheet"/>
+        <link href="assets/vendor/icon-etlinefont/style.css" rel="stylesheet"/>
+        <link href="assets/vendor/icon-line-pro/style.css" rel="stylesheet"/>
+        <link href="assets/vendor/icon-hs/style.css" rel="stylesheet"/>
+        <link href="assets/vendor/animate.css" rel="stylesheet"/>
+        <link href="assets/vendor/dzsparallaxer/dzsparallaxer.css" rel="stylesheet"/>
+        <link href="assets/vendor/dzsparallaxer/dzsscroller/scroller.css" rel="stylesheet"/>
+        <link href="assets/vendor/dzsparallaxer/advancedscroller/plugin.css" rel="stylesheet"/>
+        <link href="assets/vendor/slick-carousel/slick/slick.css" rel="stylesheet"/>
+        <link href="assets/vendor/hs-megamenu/src/hs.megamenu.css" rel="stylesheet"/>
+        <link href="assets/vendor/hamburgers/hamburgers.min.css" rel="stylesheet"/>
+
+
+        <!-- CSS Unify -->
+        <link href="assets/css/unify-core.css" rel="stylesheet"/>
+        <link href="assets/css/unify-components.css" rel="stylesheet"/>
+        <link href="assets/css/unify-globals.css" rel="stylesheet"/>
+
+        <!-- CSS Implementing Plugins -->
+        <link  rel="stylesheet" href="assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+
+        <!-- CSS Customization -->
+        <link href="assets/css/custom.css" rel="stylesheet"/>
+        <style type="text/css">
+            .align-items-top {
+            }
+
+            .table-style .today {
+                background: #2A3F54;
+                color: #ffffff;
+            }
+
+            .table-style tr:first-child th {
+                background-color: #F6F6F6;
+                text-align: center;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+
+    <body>
+    <main>
+
+
+        <!-- Header -->
+        <header id="js-header" class="u-header u-header--static">
+            <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+                <nav class="js-mega-menu navbar navbar-expand-lg">
+                    <div class="container">
+                        <!-- Responsive Toggle Button -->
+                        <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                                    <span class="hamburger hamburger--slider">
+                                        <span class="hamburger-box">
+                                            <span class="hamburger-inner"></span>
+                                        </span>
+                                    </span>
+                        </button>
+                        <!-- End Responsive Toggle Button -->
+
+                        <!-- Logo -->
+                        <a href="https://s3-us-west-1.amazonaws.com/connectsite/index.html" class="navbar-brand">
+                            <img src="https://s3-us-west-1.amazonaws.com/connectsite/lawnimages/CL-logo-v1-temp.png" alt="Connect Lawn"/>
+                        </a>
+                        <!-- End Logo -->
+
+                        <!-- Navigation -->
+                        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
+                            <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+                                <!-- Quote -->
+                                <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+                                    <a href="https://s3-us-west-1.amazonaws.com/connectsite/index.html" class="nav-link g-py-7 g-px-0">Quote</a>
+                                </li>
+                                <!-- End Quote -->
+
+                                <!-- Services -->
+                                <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+                                    <a href="https://s3-us-west-1.amazonaws.com/connectsite/index.html" class="nav-link g-py-7 g-px-0">Services</a>
+                                </li>
+                                <!-- End Services -->
+
+                                <!-- Login -->
+                                <li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                                    <a id="nav-link--features" class="nav-link g-py-7 g-px-0" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--features">Welcome Alex W</a>
+
+                                    <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-21 g-mt-11--lg--scrolling" id="nav-submenu--features" aria-labelledby="nav-link--features">
+                                        <!-- Features - Headers -->
+                                        <li class="dropdown-item ">
+                                            <a class="nav-link" href="../../unify-main/shortcodes/headers/index.html">My Account</a>
+                                        </li>
+                                        <!-- End Features - Headers -->
+
+                                        <!-- Features - Promo blocks -->
+                                        <li class="dropdown-item ">
+                                            <a class="nav-link" href="../../unify-main/shortcodes/promo/index.html">Log Out</a>
+                                        </li>
+                                        <!-- End Features - Promo blocks -->
+
+                                    </ul>
+                                </li>
+                                <!-- End Features -->
+                            </ul>
+                        </div>
+                        <!-- End Login -->
+
+
+                    </div>
+                    <!-- End Navigation -->
+                    <!-- Lawn mower-->
+                    <a href="https://s3-us-west-1.amazonaws.com/connectsite/index.html">
+                        <img src="https://s3-us-west-1.amazonaws.com/connectsite/lawnimages/LawnMower-v1-temp.png" alt="Lawnmower Account"/>
+                    </a>
+                    <!-- End Logo -->
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+
+        <!-- Promo Block - Parallax -->
+        <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll dzsprx-readyall" data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
+            <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-img-hero g-bg-bluegray-opacity-0_3--after " style="height: 130%; background-image: url('https://s3-us-west-1.amazonaws.com/connectsite/lawnimages/475958716.jpg');  transform: translate3d(0px, -54.5632px, 0px);"></div>
+            <!-- Oops Service-->
+            <div style="display: none">
+
+                <div class="container g-font-weight-600 u-bg-overlay__inner text-center g-pt-75">
+                    <h1 class="h1 g-color-white text-uppercase">Oops, we don’t have an address. </h1>
+                </div>
+                <!-- Signup -->
+                <section class="container g-py-25">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-10 col-md-9 col-lg-6">
+
+                            <!-- Form -->
+                            <form class="g-py-15">
+                                <div class="row justify-content-center">
+
+
+                                    <button class="btn btn-md btn-block u-btn-primary g-rounded-50 g-py-13 mb-4" type="button">Let's get stared</button>
+
+                                    <div>
+                                        <ul class="list-inline g-color-white">
+                                            <li class="list-inline-item g-line-height-1 g-pr-7 g-mr-5">
+                                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://s3-us-west-1.amazonaws.com/connectsite/index.html"> <span>Already have an account? Sign In <i class="fa fa-angle-right"></i></span> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- End Oops Service -->
+            <!-- State Logged in -->
+            <div style="display: block">
+                <!-- Choose Address -->
+                <section class="container g-pt-100 g-pb-70">
+                    <div class="mb-5">
+                        <h2 class="h3 g-color-white mb-0">Contractor Signup</h2>
+                        <div class="d-inline-block g-width-50 g-height-1 g-bg-white"></div>
+                    </div>
+
+                    <!-- begin new code -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="g-bg-white g-rounded-3 g-px-10 g-px-50--md g-px-100--lg g-pt-30 g-pb-60">
+                                <div class="text-right"><a href="" class="g-color-gray-dark-v4">en espa&ntilde;ol</a></div>
+                                <div class="text-center g-mb-30 g-mt-20"><h3 class="g-font-weight-600">Contractor Profile</h3></div>
+
+
+
+
+
+
+                                <form action="" class="needs-validation" novalidate>
+                                    <div class="row">
+                                        <div class="col-sm col-md-6">
+                                            <!-- Text Input -->
+                                            <div class="form-group g-mb-20">
+                                                <label class="g-mb-10" for="inputGroup1_1a">First Name:</label>
+                                                <input id="inputGroup1_1a" class="form-control form-control-md rounded-0 u-has-error-v1-3" type="text" placeholder="John" required>
+                                                <small class="form-control-feedback invalid-feedback">This is a required field.</small>
+                                            </div>
+                                            <!-- End Text Input -->
+                                        </div>
+                                        <div class="col-sm col-md-6">
+                                            <!-- Text Input -->
+                                            <div class="form-group g-mb-20">
+                                                <label class="g-mb-10" for="inputGroup1_1b">Last Name:</label>
+                                                <input id="inputGroup1_1b" class="form-control form-control-md rounded-0 u-has-error-v1-3" type="text" placeholder="Doe" required>
+                                                <small class="form-control-feedback invalid-feedback">This is a required field.</small>
+                                            </div>
+                                            <!-- End Text Input -->
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm col-md-6">
+                                            <!-- Text Input -->
+                                            <div class="form-group">
+                                                <label class="g-mb-10" for="inputGroup1_1c">Address:</label>
+                                                <input id="inputGroup1_1c" class="form-control form-control-md rounded-0 u-has-error-v1-3" type="text" placeholder="1234 Main St." required>
+                                                <small class="form-control-feedback invalid-feedback">This is a required field.</small>
+                                            </div>
+                                            <!-- End Text Input -->
+                                        </div>
+                                        <div class="col-sm col-md-4">
+                                            <!-- Text Input -->
+                                            <div class="form-group g-mb-20">
+                                                <label class="g-mb-10" for="inputGroup1_1d">City:</label>
+                                                <input id="inputGroup1_1d" class="form-control form-control-md rounded-0 u-has-error-v1-3" type="text" placeholder="Los Angeles" required>
+                                                <small class="form-control-feedback invalid-feedback">This is a required field.</small>
+                                            </div>
+                                            <!-- End Text Input -->
+                                        </div>
+                                        <div class="col-sm col-md-2">
+                                            <!-- Text Input -->
+                                            <div class="form-group g-mb-20">
+                                                <label class="g-mb-10" for="inputGroup1_1e">Zip:</label>
+                                                <input id="inputGroup1_1e" class="form-control form-control-md rounded-0 u-has-error-v1-3" type="text" placeholder="99999" required>
+                                                <small class="form-control-feedback invalid-feedback">This is a required field.</small>
+                                            </div>
+                                            <!-- End Text Input -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm col-md-6">
+                                            <!-- Text Input -->
+                                            <div class="form-group g-mb-20">
+                                                <label class="g-mb-10" for="inputGroup1_1f">Email:</label>
+                                                <input id="inputGroup1_1f" class="form-control form-control-md rounded-0 u-has-error-v1-3" type="email" placeholder="johndoe@gmail.com" required>
+                                                <small class="form-control-feedback invalid-feedback">This is a required field.</small>
+                                            </div>
+                                            <!-- End Text Input -->
+                                        </div>
+                                        <div class="col-sm col-md-6">
+                                            <!-- Text Input -->
+                                            <div class="form-group g-mb-20">
+                                                <label class="g-mb-10" for="inputGroup1_1g">Phone:</label>
+                                                <input id="inputGroup1_1g" class="form-control form-control-md rounded-0 u-has-error-v1-3" type="email" placeholder="555-555-5555" required>
+                                                <small class="form-control-feedback invalid-feedback">This is a required field.</small>
+                                            </div>
+                                            <!-- End Text Input -->
+                                        </div>
+                                        <div class="col g-font-size-12">* All fields required</div>
+                                    </div>
+                                    <div class="text-center g-py-30"><h3 class="g-font-weight-600">Select Your Service Area</h3></div>
+
+                                    <div class="row">
+                                        <div class="col-sm col-md-5">
+                                            <!-- Text Input -->
+                                            <div class="form-group g-mb-20">
+                                                <label class="g-mb-10" for="inputGroup1_1">Please enter a City or Zipcode</label>
+                                                <input id="inputGroup1_1" class="form-control form-control-md rounded-0 u-has-error-v1-3" type="text" placeholder="99999" required>
+                                                <small class="form-control-feedback invalid-feedback">This is a required field.</small>
+                                            </div>
+                                            <!-- End Text Input -->
+                                            <!-- Text Input -->
+                                            <div class="form-group g-mb-20">
+                                                <label class="g-mb-10" for="inputGroup1_1">Mile Radius Covered</label>
+                                                <select id="inputGroup1_1" class="form-control rounded-0 g-mb-20">
+                                                    <option value="5">5 miles</option>
+                                                    <option value="10">10 miles</option>
+                                                    <option value="15">15 miles</option>
+                                                </select>
+                                            </div>
+                                            <!-- End Text Input -->
+                                            <div class="d-block d-md-none"><iframe width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=27519&key=AIzaSyDljYHkx-mgzAlM9oiAsci4jdOGj--WRuw" allowfullscreen></iframe></div>
+                                            <!-- Checkboxes Option 2 -->
+                                            <label class="form-check-inline u-check g-pl-25 g-font-weight-600">
+                                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="">
+                                                <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                                                    <i class="fa" data-check-icon=""></i>
+                                                </div>
+                                                <div class="g-mt-22">I would like to receive emails about lawn jobs in my area.</div>
+                                            </label>
+                                            <!-- End Checkboxes Option 2 -->
+                                            <div class="text-center g-mt-30"><a href="#accordion-11-body-01" data-toggle="collapse" data-parent="#accordion-11" aria-expanded="false" aria-controls="accordion-11-body-01" class="btn btn-md btn-block btn-xxl u-btn-primary collapsed"><span class="g-font-weight-600">Continue</span> <span class="u-accordion__control-icon g-ml-5"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-down"></i></span></a></div>
+                                        </div>
+                                        <div class="col-sm col-md-7 d-none d-md-block"><iframe width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=27519&key=AIzaSyDljYHkx-mgzAlM9oiAsci4jdOGj--WRuw" allowfullscreen></iframe></div>
+                                    </div>
+                                    <div id="accordion-11" class="u-accordion u-accordion-bg-primary u-accordion-color-white" role="tablist" aria-multiselectable="true">
+                                        <!-- Card -->
+                                        <div class="card g-brd-none rounded-0 g-mb-15">
+                                            <div id="accordion-11-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-11-heading-01">
+                                                <div>
+                                                    <div class="text-center g-pt-50 g-pb-20"><h3 class="g-font-weight-600">Required Services</h3></div>
+                                                    <h5>Mow Blow and Go</h5>
+                                                    <p>When you accept a lawn the ...isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+
+                                                    <h5>Dog Poop Policy</h5>
+                                                    <p>When you accept a lawn the ...isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                                                    <div class="text-center g-py-30"><h3 class="g-font-weight-600">Terms and Conditions</h3></div>
+                                                    <!-- Box Shadow -->
+                                                    <div class="u-shadow-v1-5 g-bg-white g-brd-around g-brd-gray-dark g-line-height-2 g-pa-40 g-mb-15 g-mb-30--md" role="alert">
+                                                        <iframe src="terms.html" frameborder="0" width="100%"></iframe>
+                                                    </div>
+                                                    <!-- End Box Shadow -->
+                                                    <div class="row u-has-error-v1">
+                                                        <div class="col">
+														  	<div class="form-group">
+															    <div class="form-check">
+		                                                            <!-- Checkboxes Option 2 -->
+		                                                            <label class="form-check-label form-check-inline u-check g-pl-25 g-font-weight-600">
+		                                                                <input class="form-check-input g-hidden-xs-up g-pos-abs g-top-0 g-left-0" value="" type="checkbox" required>
+		                                                                <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+		                                                                    <i class="fa" data-check-icon=""></i>
+		                                                                </div>
+		                                                                <div>I have read and agree to the terms and conditions</div>
+		                                                				<small class="form-control-feedback invalid-feedback">This is a required field.</small>
+		                                                            </label>
+		                                                            <!-- End Checkboxes Option 2 -->
+		                                                        </div>
+		                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row u-has-error-v1">
+                                                        <div class="col">
+														  	<div class="form-group">
+															    <div class="form-check">
+		                                                            <!-- Checkboxes Option 2 -->
+		                                                            <label class="form-check-label form-check-inline u-check g-pl-25 g-font-weight-600" for="chkInsurance">
+		                                                                <input id="chkInsurance" class="form-check-input g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" required>
+		                                                                <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+		                                                                    <i class="fa" data-check-icon=""></i>
+		                                                                </div>
+		                                                                I have insurance for my lawn business
+		                                                				<small class="form-control-feedback invalid-feedback">This is a required field.</small>
+		                                                            </label>
+		                                                            <!-- End Checkboxes Option 2 -->
+		                                                        </div>
+		                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-center g-mt-60"><button type="submit" class="btn btn-md btn-xxl u-btn-primary g-px-90 g-px-150--md"><span class="g-font-weight-600">Sign Me Up</span></button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Card -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end new code -->
+                </section>
+            </div>
+            <!-- End Product Blocks -->
+            <!-- END Select Address -->
+
+
+        <!-- Footer -->
+        <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Content -->
+                    <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+                        <a class="d-block g-mb-2" href="https://s3-us-west-1.amazonaws.com/connectsite/Adobe/Dreamweaver CC 2017/index.html">
+                            <img class="img-fluid" src="https://s3-us-west-1.amazonaws.com/connectsite/lawnimages/CL-logo-v1-temp.png" alt="Logo"/>
+                        </a>
+                        <p>We work closely with our clients to customize the services we provide based on their specific needs and circumstances. </p>
+                        <p class="mb-0"></p>
+                    </div>
+                    <!-- End Footer Content -->
+
+                    <!-- Footer Content -->
+                    <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+                        <div class="u-heading-v3-1 g-brd-white-opacity-0_3 g-mb-25">
+                            <h2 class="u-heading-v3__title h6 text-uppercase g-brd-primary">Questions?</h2>
+                        </div>
+
+                        <article>
+                            <h3 class="h6 g-mb-2">
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">FAQs</a>
+                            </h3>
+                        </article>
+
+                        <hr class="g-brd-white-opacity-0_1 g-my-10"/>
+
+                        <article>
+                            <h3 class="h6 g-mb-2">
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Terms &amp; Conditions</a>
+                            </h3>
+                        </article>
+
+                        <hr class="g-brd-white-opacity-0_1 g-my-10"/>
+
+                    </div>
+                    <!-- End Footer Content -->
+
+                    <!-- Footer Content -->
+                    <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+                        <div class="u-heading-v3-1 g-brd-white-opacity-0_3 g-mb-25">
+                            <h2 class="u-heading-v3__title h6 text-uppercase g-brd-primary">Useful Links</h2>
+                        </div>
+
+                        <nav class="text-uppercase1">
+                            <ul class="list-unstyled g-mt-minus-10 mb-0">
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">About Us</a>
+                                        <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                                    </h4>
+                                </li>
+
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Our Services</a>
+                                        <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                                    </h4>
+                                </li>
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Contractors</a>
+                                        <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                                    </h4>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- End Footer Content -->
+
+                    <!-- Footer Content -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="u-heading-v3-1 g-brd-white-opacity-0_3 g-mb-25">
+                            <h2 class="u-heading-v3__title h6 text-uppercase g-brd-primary">Contact Us</h2>
+                        </div>
+
+                        <address class="g-bg-no-repeat g-line-height-2 g-mt-minus-4"/>
+
+                        Email: <a href="mailto:info@htmlstream.com" class="">info@htmlstream.com</a>
+
+                    </div>
+                    <!-- End Footer Content -->
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+
+        <!-- Copyright Footer -->
+        <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 text-center text-md-left g-mb-15 g-mb-0--md">
+                        <div class="d-lg-flex">
+                            <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2017 © All Rights Reserved.</small>
+                            <ul class="u-list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">Terms of Use</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 align-self-center">
+                        <ul class="list-inline text-center text-md-right mb-0">
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Skype">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Dribbble">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Copyright Footer -->
+
+        <a class="js-go-to u-go-to-v1" href="#" data-type="fixed" data-position="{
+                                                                                         'bottom': 15,
+                                                                                         'right': 15
+                                                                                         }" data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+            <i class="hs-icon hs-icon-arrow-top"></i>
+        </a>
+    </main>
+
+    <div class="u-outer-spaces-helper"></div>
+
+
+    <!-- JS Global Compulsory -->
+    <!-- <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/jquery.easing/js/jquery.easing.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/popper.min.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/bootstrap/bootstrap.min.js"></script> -->
+
+    <!-- JS Implementing Plugins -->
+    <!-- <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/appear.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/vendor/slick-carousel/slick/slick.js"></script> -->
+
+    <!-- JS Unify -->
+    <!-- <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/js/hs.core.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/js/components/hs.header.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/js/components/hs.tabs.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/js/components/hs.progress-bar.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/js/components/hs.rating.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/js/components/hs.counter.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/js/components/hs.carousel.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/js/components/hs.go-to.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/js/components/hs.count-qty.js"></script> -->
+
+    <!-- JS Customization -->
+    <!-- <script src="https://s3-us-west-1.amazonaws.com/connectsite/assets/js/custom.js"></script> -->
+
+    <!-- jQuery UI Core -->
+    <!-- <script  src="assets/vendor/jquery-ui/jquery-ui.core.js"></script> -->
+
+    <!-- jQuery UI Helpers -->
+    <!-- <script  src="assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script  src="assets/vendor/jquery-ui/ui/widgets/mouse.js"></script> -->
+    <!-- End jQuery UI Helpers -->
+
+    <!-- jQuery UI Widgets -->
+    <!-- <script  src="assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script> -->
+    <!-- End jQuery UI Widgets -->
+
+    <!-- JS Unify -->
+    <!-- <script  src="assets/js/components/hs.autocomplete.js"></script> -->
+
+
+
+
+
+
+    <!-- JS Global Compulsory -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="assets/vendor/jquery.easing/js/jquery.easing.js"></script>
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+    <script src="assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+    <script src="assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+    <script src="assets/vendor/appear.js"></script>
+    <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
+
+    <!-- JS Unify -->
+    <script src="assets/js/hs.core.js"></script>
+    <script src="assets/js/components/hs.header.js"></script>
+    <script src="assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="assets/js/components/hs.tabs.js"></script>
+    <script src="assets/js/components/hs.progress-bar.js"></script>
+    <script src="assets/js/components/hs.rating.js"></script>
+    <script src="assets/js/components/hs.counter.js"></script>
+    <script src="assets/js/components/hs.carousel.js"></script>
+    <script src="assets/js/components/hs.go-to.js"></script>
+    <script src="assets/js/components/hs.count-qty.js"></script>
+
+    <!-- JS Customization -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- jQuery UI Core -->
+    <script  src="assets/vendor/jquery-ui/jquery-ui.core.js"></script>
+
+    <!-- jQuery UI Helpers -->
+    <script  src="assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script  src="assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <!-- End jQuery UI Helpers -->
+
+    <!-- jQuery UI Widgets -->
+    <script  src="assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <!-- End jQuery UI Widgets -->
+
+    <!-- JS Unify -->
+    <script  src="assets/js/components/hs.autocomplete.js"></script>
+
+
+    <!-- JS Plugins Init. -->
+    <script>
+        $(document).on('ready', function () {
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
+
+            $('#carouselCus1').slick('setOption', 'responsive', [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 6
+                }
+            }, {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 5
+                }
+            }, {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 446,
+                settings: {
+                    slidesToShow: 1
+                }
+            }], true);
+
+            // initialization of tabs
+            $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+            // initialization of rating
+            $.HSCore.components.HSRating.init($('.js-rating'), {
+                spacing: 4
+            });
+
+            // initialization of counters
+            var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+
+
+            // initialization of forms
+            $.HSCore.components.HSCountQty.init('.js-quantity');
+
+            // initialization of forms autocomplete2
+            $.HSCore.components.HSAutocomplete.init('#autocomplete2');
+        });
+
+        $(window).on('load', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+
+            // initialization of horizontal progress bars
+            setTimeout(function () { // important in this case
+                var horizontalProgressBars = $.HSCore.components.HSProgressBar.init('.js-hr-progress-bar', {
+                    direction: 'horizontal',
+                    indicatorSelector: '.js-hr-progress-bar-indicator'
+                });
+            }, 1);
+        });
+
+        $(window).on('resize', function () {
+            setTimeout(function () {
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+            }, 200);
+        });
+
+    </script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+
+    </body>
+
+    </html>
+
+</apex:page>
