@@ -15,8 +15,8 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik" rel="stylesheet"/>
         <!-- CSS Global Compulsory -->
-        <!--<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css"/>-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css"/>
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
         <!-- CSS Global Icons -->
         <!--<link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>-->
         <link href="assets/vendor/icon-awesome/css/font-awesome.min.css" rel="stylesheet"/>
@@ -32,11 +32,14 @@
         <link href="assets/vendor/hs-megamenu/src/hs.megamenu.css" rel="stylesheet"/>
         <link href="assets/vendor/hamburgers/hamburgers.min.css" rel="stylesheet"/>
 
-
         <!-- CSS Unify -->
         <link href="assets/css/unify-core.css" rel="stylesheet"/>
         <link href="assets/css/unify-components.css" rel="stylesheet"/>
         <link href="assets/css/unify-globals.css" rel="stylesheet"/>
+
+        <!-- CSS Implementing Plugins -->
+        <link  rel="stylesheet" href="assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+
 
         <!-- CSS Customization -->
         <link href="assets/css/custom.css" rel="stylesheet"/>
@@ -207,7 +210,139 @@
                         <div class="tab-pane fade show active g-ml-45" id="nav-1-1-accordion-default-hor-left-underline--1" role="tabpanel">
 
 
+
+
+
+                            <!-- Select Date Range -->
+                            <div class="form-group mb-0">
+                                <label class="g-mb-10">Select date range</label>
+                                <div class="row">
+                                    <div class="col-xl-6 g-mb-40 g-mb-0--xl">
+                                        <!-- Datepicker -->
+                                        <div class="input-group g-brd-primary--focus">
+                                            <input id="datepickerFrom" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0" type="text" placeholder="Start date" data-range="1" data-to="datepickerTo">
+                                            <div class="input-group-addon d-flex align-items-center g-bg-white g-color-gray-dark-v5 rounded-0">
+                                                <i class="icon-calendar"></i>
+                                            </div>
+                                        </div>
+                                        <!-- End Datepicker -->
+                                    </div>
+
+                                    <div class="col-xl-6">
+                                        <!-- Datepicker -->
+                                        <div class="input-group g-brd-primary--focus">
+                                            <input id="datepickerTo" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0" type="text" placeholder="Expected finish date">
+                                            <div class="input-group-addon d-flex align-items-center g-bg-white g-color-gray-dark-v5 rounded-0">
+                                                <i class="icon-calendar"></i>
+                                            </div>
+                                        </div>
+                                        <!-- End Datepicker -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Select Date Range -->
+
+
+
+
+
+
                             <h4 class="g-pt-40 g-pb-20">Available: There are 26 jobs in your area</h4>
+
+
+                            <!-- Inline Forms -->
+                            <form class="g-brd-aroundz g-brd-gray-light-v4z g-pa-30z g-mb-30z">
+                                <div class="form-inline">
+                                    <h5>Filter:</h5>
+                                    <input type="text" class="form-control form-control-md rounded-0 mx-sm-3" id="inlineFormInput" placeholder="Enter Zipcode">
+
+                                    <!--<label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                    <div class="input-group mr-sm-3 mb-3 mb-lg-0">
+                                        <div class="input-group-addon justify-content-center">@</div>
+                                        <input type="text" class="form-control form-control-md rounded-0" id="inlineFormInputGroup" placeholder="Username">
+                                    </div>
+
+                                    <div class="form-check mr-sm-3 mb-3 mb-sm-0">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox">Remember me
+                                        </label>
+                                    </div>-->
+
+
+
+
+                                    <!-- Datepicker -->
+                                    <div class="input-group g-brd-primary--focus mx-sm-3">
+                                        <input id="datepickerFrom" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0" type="text" placeholder="Start date" data-range="1" data-to="datepickerTo">
+                                        <div class="input-group-addon d-flex align-items-center g-bg-white g-color-gray-dark-v5 rounded-0">
+                                            <i class="icon-calendar"></i>
+                                        </div>
+                                    </div>
+                                    <!-- End Datepicker -->
+                                    <!-- Datepicker -->
+                                    <div class="input-group g-brd-primary--focus mx-sm-3">
+                                        <input id="datepickerTo" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0" type="text" placeholder="Expected finish date">
+                                        <div class="input-group-addon d-flex align-items-center g-bg-white g-color-gray-dark-v5 rounded-0">
+                                            <i class="icon-calendar"></i>
+                                        </div>
+                                    </div>
+                                    <!-- End Datepicker -->
+
+
+
+
+                                    <button type="submit" class="btn btn-md u-btn-primary rounded-0">Submit</button>
+                                </div>
+                            </form>
+                            <!-- End Inline Forms -->
+
+
+
+
+                            <!-- Text Input -->
+                            <div class="form-group row g-mb-25">
+                                <label class="col-1 col-form-label g-mb-10" for="hf-email">Filter:</label>
+
+                                <div class="col-2">
+                                    <input id="hf-email" class="form-control u-form-control rounded-0" type="email" placeholder="Enter Zipcode">
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-4 g-mb-40 g-mb-0--xl">
+                                        <!-- Datepicker -->
+                                        <div class="input-group g-brd-primary--focus">
+                                            <input id="datepickerFrom" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0" type="text" placeholder="Start date" data-range="1" data-to="datepickerTo">
+                                            <div class="input-group-addon d-flex align-items-center g-bg-white g-color-gray-dark-v5 rounded-0">
+                                                <i class="icon-calendar"></i>
+                                            </div>
+                                        </div>
+                                        <!-- End Datepicker -->
+                                    </div>
+
+                                    <div class="col-4">
+                                        <!-- Datepicker -->
+                                        <div class="input-group g-brd-primary--focus">
+                                            <input id="datepickerTo" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0" type="text" placeholder="Expected finish date">
+                                            <div class="input-group-addon d-flex align-items-center g-bg-white g-color-gray-dark-v5 rounded-0">
+                                                <i class="icon-calendar"></i>
+                                            </div>
+                                        </div>
+                                        <!-- End Datepicker -->
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- End Text Input -->
+
+
+
+
+
+
+
+
 
                             <!-- Hoverable Rows -->
                             <div class="table-responsive">
@@ -276,6 +411,56 @@
                                         <td>Once</td>
                                         <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
                                     </tr>
+                                    <tr>
+                                        <td><span class="g-font-size-16"><i class="fa fa-refresh g-color-primary"></i></span></td>
+                                        <td>4/13/18</td>
+                                        <td class="hidden-sm">Long Beach</td>
+                                        <td>90715</td>
+                                        <td>4.5 mi</td>
+                                        <td>$37</td>
+                                        <td>Repeating</td>
+                                        <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="g-font-size-16"><i class="fa fa-star-o g-color-primary"></i></span></td>
+                                        <td>4/15/18</td>
+                                        <td>Huntington Beach</td>
+                                        <td>99999</td>
+                                        <td>6.2 mi</td>
+                                        <td>$37</td>
+                                        <td>Once</td>
+                                        <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="g-font-size-16"><i class="fa fa-star g-color-primary"></i></span></td>
+                                        <td>4/17/18</td>
+                                        <td>Long Beach</td>
+                                        <td>90717</td>
+                                        <td>3.5 mi</td>
+                                        <td>$42</td>
+                                        <td>Once</td>
+                                        <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="g-font-size-16"><i class="fa fa-star-o g-color-primary"></i></span></td>
+                                        <td>4/19/18</td>
+                                        <td>Long Beach</td>
+                                        <td>90715</td>
+                                        <td>4.9 mi</td>
+                                        <td>$39</td>
+                                        <td>Previous Client</td>
+                                        <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="g-font-size-16"><i class="fa fa-star-o g-color-primary"></i></span></td>
+                                        <td>4/20/18</td>
+                                        <td>Torrance</td>
+                                        <td>90718</td>
+                                        <td>8.5 mi</td>
+                                        <td>$45</td>
+                                        <td>Once</td>
+                                        <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -289,33 +474,33 @@
                             <nav aria-label="Page Navigation">
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
-                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-13" href="#!" aria-label="Previous">
-                                            <span aria-hidden="true">
-                                              <i class="fa fa-angle-left"></i>
-                                            </span>
+                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-13" href="#" aria-label="Previous">
+        <span aria-hidden="true">
+          <i class="fa fa-angle-left"></i>
+        </span>
                                             <span class="sr-only">Previous</span>
                                         </a>
                                     </li>
                                     <li class="list-inline-item g-hidden-sm-down">
-                                        <a class="u-pagination-v1__item u-pagination-v1-3 u-pagination-v1-3--active g-pa-4-11" href="#!">1</a>
+                                        <a class="u-pagination-v1__item u-pagination-v1-3 u-pagination-v1-3--active g-pa-4-11" href="#">1</a>
                                     </li>
                                     <li class="list-inline-item g-hidden-sm-down">
-                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-11" href="#!">2</a>
+                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-11" href="#">2</a>
                                     </li>
                                     <li class="list-inline-item g-hidden-sm-down">
-                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-11" href="#!">3</a>
+                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-11" href="#">3</a>
                                     </li>
                                     <li class="list-inline-item g-hidden-sm-down">
                                         <span class="g-pa-4-11">...</span>
                                     </li>
                                     <li class="list-inline-item g-hidden-sm-down">
-                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-11" href="#!">8</a>
+                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-11" href="#">8</a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-13" href="#!" aria-label="Next">
-                                            <span aria-hidden="true">
-                                              <i class="fa fa-angle-right"></i>
-                                            </span>
+                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-13" href="#" aria-label="Next">
+        <span aria-hidden="true">
+          <i class="fa fa-angle-right"></i>
+        </span>
                                             <span class="sr-only">Next</span>
                                         </a>
                                     </li>
@@ -544,8 +729,10 @@
     <script src="assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
     <script src="assets/vendor/jquery.easing/js/jquery.easing.js"></script>
     <script src="assets/vendor/popper.min.js"></script>
-    <!--<script src="assets/vendor/bootstrap/bootstrap.min.js"></script>-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
 
     <!-- JS Implementing Plugins -->
     <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
@@ -566,12 +753,34 @@
     <script src="assets/js/components/hs.carousel.js"></script>
     <script src="assets/js/components/hs.go-to.js"></script>
 
+
+    <!-- jQuery UI Core -->
+    <script  src="assets/vendor/jquery-ui/ui/widget.js"></script>
+    <script  src="assets/vendor/jquery-ui/ui/version.js"></script>
+    <script  src="assets/vendor/jquery-ui/ui/keycode.js"></script>
+    <script  src="assets/vendor/jquery-ui/ui/position.js"></script>
+    <script  src="assets/vendor/jquery-ui/ui/unique-id.js"></script>
+    <script  src="assets/vendor/jquery-ui/ui/safe-active-element.js"></script>
+
+    <!-- jQuery UI Helpers -->
+    <script  src="assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script  src="assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+    <!-- jQuery UI Widgets -->
+    <script  src="assets/vendor/jquery-ui/ui/widgets/datepicker.js"></script>
+
+    <!-- JS Unify -->
+    <script  src="assets/js/components/hs.datepicker.js"></script>
+
     <!-- JS Customization -->
     <script src="assets/js/custom.js"></script>
 
     <!-- JS Plugins Init. -->
     <script>
         $(document).on('ready', function () {
+            // initialization of forms
+            $.HSCore.components.HSDatepicker.init('#datepickerDefault, #datepickerInline, #datepickerInlineFrom, #datepickerFrom');
+
             // initialization of carousel
             $.HSCore.components.HSCarousel.init('.js-carousel');
 
