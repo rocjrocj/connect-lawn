@@ -25,6 +25,7 @@
         <link href="assets/vendor/icon-line-pro/style.css" rel="stylesheet"/>
         <link href="assets/vendor/icon-hs/style.css" rel="stylesheet"/>
         <link href="assets/vendor/animate.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/vendor/themify-icons/themify-icons.css">
         <link href="assets/vendor/dzsparallaxer/dzsparallaxer.css" rel="stylesheet"/>
         <link href="assets/vendor/dzsparallaxer/dzsscroller/scroller.css" rel="stylesheet"/>
         <link href="assets/vendor/dzsparallaxer/advancedscroller/plugin.css" rel="stylesheet"/>
@@ -39,6 +40,7 @@
 
         <!-- CSS Implementing Plugins -->
         <link  rel="stylesheet" href="assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+        <link  rel="stylesheet" href="assets/vendor/custombox/custombox.min.css">
 
 
         <!-- CSS Customization -->
@@ -396,10 +398,10 @@
                             <nav aria-label="Page Navigation">
                                 <ul class="list-inline g-py-20">
                                     <li class="list-inline-item">
-                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-13" href="#" aria-label="Previous">
-        <span aria-hidden="true">
-          <i class="fa fa-angle-left"></i>
-        </span>
+                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-11" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">
+                                              <i class="fa fa-angle-left g-my-4"></i>
+                                            </span>
                                             <span class="sr-only">Previous</span>
                                         </a>
                                     </li>
@@ -416,23 +418,22 @@
                                         <span class="g-pa-4-11">...</span>
                                     </li>
                                     <li class="list-inline-item g-hidden-sm-down">
-                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-11" href="#">80</a>
+                                        <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-11" href="#">8</a>
                                     </li>
                                     <li class="list-inline-item">
                                         <a class="u-pagination-v1__item u-pagination-v1-3 g-pa-4-13" href="#" aria-label="Next">
-        <span aria-hidden="true">
-          <i class="fa fa-angle-right"></i>
-        </span>
+                                            <span aria-hidden="true">
+                                              <i class="fa fa-angle-right g-my-4"></i>
+                                            </span>
                                             <span class="sr-only">Next</span>
                                         </a>
                                     </li>
                                     <li class="list-inline-item float-right">
-                                        <span class="u-pagination-v1__item-info g-pa-4-11">Page 1 of 80</span>
+                                        <span class="u-pagination-v1__item-info g-pa-4-11">Page 1 of 8</span>
                                     </li>
                                 </ul>
                             </nav>
                             <!-- End Pagination #03 -->
-
 
 
 
@@ -464,17 +465,139 @@
 
 
 
-
-                    <div class="row">
-                        <div class="col-md-12">
-
+                    <a class="btn u-btn-primary" href="#modal1" data-modal-target="#modal1" data-modal-effect="fadein">Launch Modal
+                    </a>
 
 
+                    <!-- Demo modal window -->
+                    <div id="modal1" class="text-left g-max-width-700 g-bg-white g-overflow-y-auto g-pa-20" style="display: none; min-width: 700px !important;">
+                        <button type="button" class="close" onclick="Custombox.modal.close();">
+                            <i class="hs-icon hs-icon-close"></i>
+                        </button>
+                        <h4 class="float-right g-mr-20">4/13/18</h4>
+                        <h4 class="g-mb-20"><i class="fa fa-star g-color-primary"></i> Long Beach, CA 90815</h4>
+                        <hr class="g-brd-black g-my-10">
 
 
-
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div><strong>Client Name:</strong></div>
+                                        <div>John Doe</div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div><strong>Service Date Requested:</strong></div>
+                                        <div>Friday, April 13th</div>
+                                    </div>
+                                </div>
+                                <div class="row g-mt-15">
+                                    <div class="col-5"><strong>Address:</strong></div>
+                                    <div class="col-7"><strong><a href="">Map It</a></strong></div>
+                                </div>
+                                <div>
+                                    <div>Apt# B</div>
+                                    <div>1234 Main St. Long Beach, CA 90815</div>
+                                </div>
+                                <div class="row g-mt-15">
+                                    <div class="col-5">
+                                        <div><strong>Price:</strong></div>
+                                        <div>$37</div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div><strong>Pets:</strong></div>
+                                        <div>No</div>
+                                    </div>
+                                </div>
+                                <div class="g-mt-15">
+                                    <div><strong>Type:</strong></div>
+                                    <div>Previous Client</div>
+                                </div>
+                                <h5 class="g-mt-15"><a href="">Contractor Request Change +</a></h5>
+                            </div>
+                            <div class="col-6">
+                                <!-- Textarea -->
+                                <div class="form-group g-mb-20">
+                                    <label class="g-mb-10" for="inputGroup2_1"><strong>Special Instructions:</strong></label>
+                                    <textarea id="inputGroup2_1" class="form-control form-control-md g-resize-none rounded-0" rows="10" placeholder=""></textarea>
+                                    <button type="button" class="btn btn-primary btn-lg btn-block g-mr-10 g-my-15">Accept</button>
+                                </div>
+                                <!-- End Textarea -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <form class="form-inline">
+                                    <!-- Checkboxes Option 2 -->
+                                    <label class="form-check-inline u-check g-pl-25">
+                                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="">
+                                        <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                                            <i class="fa" data-check-icon=""></i>
+                                        </div>
+                                        Change Price
+                                    </label>
+                                    <!-- Quantity -->
+                                    <!--<div class="form-group g-mb-20">-->
+                                        <!--<label class="g-mb-10">Quantity</label>-->
+                                        <div class="js-quantity input-group u-quantity-v1 w-50 g-brd-gray-light-v3 g-brd-primary--focus g-pl-15">
+                                            <div class="input-group-addon justify-content-center g-width-35 g-font-size-16 g-color-gray g-bg-gray-light-v5 rounded-0">$</div>
+                                            <input class="js-result form-control text-center g-font-size-16 rounded-0 g-pa-10-16" type="text" value="4/13/18" readonly="">
+                                            <div class="input-group-addon d-flex align-items-center g-width-30 g-font-size-16 g-color-gray g-bg-white rounded-0 g-py-4">
+                                                <div class="d-block">
+                                                    <i class="js-plus ti ti-angle-up d-block"></i>
+                                                    <i class="js-minus ti ti-angle-down d-block"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!--</div>-->
+                                    <!-- End Quantity -->
+                                    <!-- End Checkboxes Option 2 -->
+                                </form>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <!-- Checkboxes Option 2 -->
+                                        <label class="form-check-inline u-check g-pl-25">
+                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="">
+                                            <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                                                <i class="fa" data-check-icon=""></i>
+                                            </div>
+                                            Change Date
+                                        </label>
+                                        <!-- End Checkboxes Option 2 -->
+                                    </div>
+                                    <div class="col-7">
+                                        <!-- Select Single Date -->
+                                        <!--<div class="form-group g-mb-30z">-->
+                                        <!--<label class="g-mb-10">Select single date</label>-->
+                                        <span class="input-group g-brd-primary--focus">
+                                            <input id="datepickerDefault" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0 w-25z" type="text">
+                                            <div class="input-group-addon d-flex align-items-center g-bg-white g-color-gray-dark-v5 rounded-0">
+                                                <i class="icon-calendar"></i>
+                                            </div>
+                                        </span>
+                                        <!--</div>-->
+                                        <!-- End Select Single Date -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <!-- Checkboxes Option 2 -->
+                                <label class="form-check-inline u-check g-pl-25">
+                                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="">
+                                    <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                                        <i class="fa" data-check-icon=""></i>
+                                    </div>
+                                    Ask a Question
+                                </label>
+                                <!-- End Checkboxes Option 2 -->
+                                <textarea id="inputGroup2_1" class="form-control form-control-md g-resize-none rounded-0" rows="3" placeholder=""></textarea>
+                                <button type="button" class="btn btn-primary btn-lg btn-block g-mr-10 g-my-15">Request Changes</button>
+                            </div>
                         </div>
                     </div>
+                    <!-- End Demo modal window -->
+
+
                     <div class="g-mb-50"></div>
                     <!-- end new code -->
 
@@ -663,6 +786,8 @@
     <script src="assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
     <script src="assets/vendor/appear.js"></script>
     <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
+    <script  src="assets/vendor/custombox/custombox.min.js"></script>
+
 
     <!-- JS Unify -->
     <script src="assets/js/hs.core.js"></script>
@@ -674,6 +799,7 @@
     <script src="assets/js/components/hs.counter.js"></script>
     <script src="assets/js/components/hs.carousel.js"></script>
     <script src="assets/js/components/hs.go-to.js"></script>
+    <script  src="assets/js/components/hs.modal-window.js"></script>
 
 
     <!-- jQuery UI Core -->
@@ -693,6 +819,7 @@
 
     <!-- JS Unify -->
     <script  src="assets/js/components/hs.datepicker.js"></script>
+    <script  src="assets/js/components/hs.count-qty.js"></script>
 
     <!-- JS Customization -->
     <script src="assets/js/custom.js"></script>
@@ -702,6 +829,9 @@
         $(document).on('ready', function () {
             // initialization of forms
             $.HSCore.components.HSDatepicker.init('#datepickerDefault, #datepickerInline, #datepickerInlineFrom, #datepickerFrom');
+            $.HSCore.components.HSCountQty.init('.js-quantity');
+            // initialization of popups
+            $.HSCore.components.HSModalWindow.init('[data-modal-target]');
 
             // initialization of carousel
             $.HSCore.components.HSCarousel.init('.js-carousel');
