@@ -286,7 +286,7 @@
                                     </thead>
 
                                     <tbody>
-                                    <tr>
+                                    <tr data-modal-target="#modal1" data-modal-effect="fadein">
                                         <td><span class="g-font-size-16"><i class="fa fa-refresh g-color-primary"></i></span></td>
                                         <td>4/13/18</td>
                                         <td class="hidden-sm">Long Beach</td>
@@ -296,7 +296,7 @@
                                         <td>Repeating</td>
                                         <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
                                     </tr>
-                                    <tr>
+                                    <tr data-modal-target="#modal1" data-modal-effect="fadein">
                                         <td><span class="g-font-size-16"><i class="fa fa-star-o g-color-primary"></i></span></td>
                                         <td>4/15/18</td>
                                         <td>Huntington Beach</td>
@@ -306,7 +306,7 @@
                                         <td>Once</td>
                                         <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
                                     </tr>
-                                    <tr>
+                                    <tr data-modal-target="#modal1" data-modal-effect="fadein">
                                         <td><span class="g-font-size-16"><i class="fa fa-star g-color-primary"></i></span></td>
                                         <td>4/17/18</td>
                                         <td>Long Beach</td>
@@ -316,7 +316,7 @@
                                         <td>Once</td>
                                         <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
                                     </tr>
-                                    <tr>
+                                    <tr data-modal-target="#modal1" data-modal-effect="fadein">
                                         <td><span class="g-font-size-16"><i class="fa fa-star-o g-color-primary"></i></span></td>
                                         <td>4/19/18</td>
                                         <td>Long Beach</td>
@@ -326,7 +326,7 @@
                                         <td>Previous Client</td>
                                         <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
                                     </tr>
-                                    <tr>
+                                    <tr data-modal-target="#modal1" data-modal-effect="fadein">
                                         <td><span class="g-font-size-16"><i class="fa fa-star-o g-color-primary"></i></span></td>
                                         <td>4/20/18</td>
                                         <td>Torrance</td>
@@ -336,7 +336,7 @@
                                         <td>Once</td>
                                         <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
                                     </tr>
-                                    <tr>
+                                    <tr data-modal-target="#modal1" data-modal-effect="fadein">
                                         <td><span class="g-font-size-16"><i class="fa fa-refresh g-color-primary"></i></span></td>
                                         <td>4/13/18</td>
                                         <td class="hidden-sm">Long Beach</td>
@@ -346,7 +346,7 @@
                                         <td>Repeating</td>
                                         <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
                                     </tr>
-                                    <tr>
+                                    <tr data-modal-target="#modal1" data-modal-effect="fadein">
                                         <td><span class="g-font-size-16"><i class="fa fa-star-o g-color-primary"></i></span></td>
                                         <td>4/15/18</td>
                                         <td>Huntington Beach</td>
@@ -356,7 +356,7 @@
                                         <td>Once</td>
                                         <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
                                     </tr>
-                                    <tr>
+                                    <tr data-modal-target="#modal1" data-modal-effect="fadein">
                                         <td><span class="g-font-size-16"><i class="fa fa-star g-color-primary"></i></span></td>
                                         <td>4/17/18</td>
                                         <td>Long Beach</td>
@@ -366,7 +366,7 @@
                                         <td>Once</td>
                                         <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
                                     </tr>
-                                    <tr>
+                                    <tr data-modal-target="#modal1" data-modal-effect="fadein">
                                         <td><span class="g-font-size-16"><i class="fa fa-star-o g-color-primary"></i></span></td>
                                         <td>4/19/18</td>
                                         <td>Long Beach</td>
@@ -376,7 +376,7 @@
                                         <td>Previous Client</td>
                                         <td><a href="#!" class="btn btn-xs u-btn-primary btn-block">Accept</a></td>
                                     </tr>
-                                    <tr>
+                                    <tr data-modal-target="#modal1" data-modal-effect="fadein">
                                         <td><span class="g-font-size-16"><i class="fa fa-star-o g-color-primary"></i></span></td>
                                         <td>4/20/18</td>
                                         <td>Torrance</td>
@@ -465,8 +465,8 @@
 
 
 
-                    <a class="btn u-btn-primary" href="#modal1" data-modal-target="#modal1" data-modal-effect="fadein">Launch Modal
-                    </a>
+                    <!--<a class="btn u-btn-primary" href="#modal1" data-modal-target="#modal1" data-modal-effect="fadein">Launch Modal
+                    </a>-->
 
 
                     <!-- Demo modal window -->
@@ -528,6 +528,8 @@
                         <div class="row">
                             <div class="col-6">
                                 <form class="form-inline">
+                                    <div class="row">
+                                        <div class="col-5 d-flex align-items-stretchz align-items-center">
                                     <!-- Checkboxes Option 2 -->
                                     <label class="form-check-inline u-check g-pl-25">
                                         <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="">
@@ -536,13 +538,15 @@
                                         </div>
                                         Change Price
                                     </label>
+                                        </div>
+                                        <div class="col-7">
                                     <!-- Quantity -->
                                     <!--<div class="form-group g-mb-20">-->
                                         <!--<label class="g-mb-10">Quantity</label>-->
-                                        <div class="js-quantity input-group u-quantity-v1 w-50 g-brd-gray-light-v3 g-brd-primary--focus g-pl-15">
-                                            <div class="input-group-addon justify-content-center g-width-35 g-font-size-16 g-color-gray g-bg-gray-light-v5 rounded-0">$</div>
-                                            <input class="js-result form-control text-center g-font-size-16 rounded-0 g-pa-10-16" type="text" value="4/13/18" readonly="">
-                                            <div class="input-group-addon d-flex align-items-center g-width-30 g-font-size-16 g-color-gray g-bg-white rounded-0 g-py-4">
+                                        <div class="js-quantity input-group u-quantity-v1 w-50z g-brd-gray-light-v3 g-brd-primary--focus g-pl-15">
+                                            <div class="input-group-addon justify-content-center g-width-35z g-font-size-16 g-color-gray g-bg-gray-light-v5 rounded-0">$</div>
+                                            <input class="js-result form-control text-center g-font-size-16 rounded-0 g-pa-10-16" type="text" value="37" readonly="">
+                                            <div class="input-group-addon d-flex align-items-center g-width-30z g-font-size-16 g-color-gray g-bg-white rounded-0 g-py-4">
                                                 <div class="d-block">
                                                     <i class="js-plus ti ti-angle-up d-block"></i>
                                                     <i class="js-minus ti ti-angle-down d-block"></i>
@@ -552,9 +556,11 @@
                                     <!--</div>-->
                                     <!-- End Quantity -->
                                     <!-- End Checkboxes Option 2 -->
+                                        </div>
+                                    </div>
                                 </form>
                                 <div class="row">
-                                    <div class="col-5">
+                                    <div class="col-5 d-flex align-items-stretchz align-items-center">
                                         <!-- Checkboxes Option 2 -->
                                         <label class="form-check-inline u-check g-pl-25">
                                             <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="">
@@ -570,7 +576,7 @@
                                         <!--<div class="form-group g-mb-30z">-->
                                         <!--<label class="g-mb-10">Select single date</label>-->
                                         <span class="input-group g-brd-primary--focus">
-                                            <input id="datepickerDefault" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0 w-25z" type="text">
+                                            <input id="datepickerDefault" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0 w-25z g-z-index-9999" type="text">
                                             <div class="input-group-addon d-flex align-items-center g-bg-white g-color-gray-dark-v5 rounded-0">
                                                 <i class="icon-calendar"></i>
                                             </div>
