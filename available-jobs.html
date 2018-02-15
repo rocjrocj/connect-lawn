@@ -513,7 +513,7 @@
                                     <div><strong>Type:</strong></div>
                                     <div>Previous Client</div>
                                 </div>
-                                <h5 class="g-mt-15"><a href="">Contractor Request Change +</a></h5>
+                                <h5 class="g-mt-15"><a href="#accordion-11-body-01" data-toggle="collapse" data-parent="#accordion-11" aria-expanded="false" aria-controls="accordion-11-body-01">Contractor Request Change +</a></h5>
                             </div>
                             <div class="col-6">
                                 <!-- Textarea -->
@@ -525,81 +525,107 @@
                                 <!-- End Textarea -->
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <form class="form-inline">
+
+
+
+
+
+                        <div id="accordion-11" class="u-accordion u-accordion-bg-primary u-accordion-color-white" role="tablist" aria-multiselectable="true">
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded-0 g-mb-15">
+                                <div id="accordion-11-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-11-heading-01">
+
+
                                     <div class="row">
-                                        <div class="col-5 d-flex align-items-stretchz align-items-center">
-                                    <!-- Checkboxes Option 2 -->
-                                    <label class="form-check-inline u-check g-pl-25">
-                                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="">
-                                        <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
-                                            <i class="fa" data-check-icon=""></i>
-                                        </div>
-                                        Change Price
-                                    </label>
-                                        </div>
-                                        <div class="col-7">
-                                    <!-- Quantity -->
-                                    <!--<div class="form-group g-mb-20">-->
-                                        <!--<label class="g-mb-10">Quantity</label>-->
-                                        <div class="js-quantity input-group u-quantity-v1 w-50z g-brd-gray-light-v3 g-brd-primary--focus g-pl-15">
-                                            <div class="input-group-addon justify-content-center g-width-35z g-font-size-16 g-color-gray g-bg-gray-light-v5 rounded-0">$</div>
-                                            <input class="js-result form-control text-center g-font-size-16 rounded-0 g-pa-10-16" type="text" value="37" readonly="">
-                                            <div class="input-group-addon d-flex align-items-center g-width-30z g-font-size-16 g-color-gray g-bg-white rounded-0 g-py-4">
-                                                <div class="d-block">
-                                                    <i class="js-plus ti ti-angle-up d-block"></i>
-                                                    <i class="js-minus ti ti-angle-down d-block"></i>
+                                        <div class="col-6">
+                                            <form class="form-inline">
+                                                <div class="row">
+                                                    <div class="col-5 d-flex align-items-stretchz align-items-center">
+                                                        <!-- Checkboxes Option 2 -->
+                                                        <label class="form-check-inline u-check g-pl-25">
+                                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="">
+                                                            <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                                                                <i class="fa" data-check-icon=""></i>
+                                                            </div>
+                                                            Change Price
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <!-- Quantity -->
+                                                        <!--<div class="form-group g-mb-20">-->
+                                                        <!--<label class="g-mb-10">Quantity</label>-->
+                                                        <div class="js-quantity input-group u-quantity-v1 w-50z g-brd-gray-light-v3 g-brd-primary--focus g-pl-15z">
+                                                            <div class="input-group-addon justify-content-center g-width-35z g-font-size-16 g-color-gray g-bg-gray-light-v5 rounded-0">$</div>
+                                                            <input class="js-result form-control text-center g-font-size-16 rounded-0 g-pa-10-16" type="text" value="37" readonly="">
+                                                            <div class="input-group-addon d-flex align-items-center g-width-30z g-font-size-16 g-color-gray g-bg-white rounded-0 g-py-4">
+                                                                <div class="d-block">
+                                                                    <i class="js-plus ti ti-angle-up d-block"></i>
+                                                                    <i class="js-minus ti ti-angle-down d-block"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--</div>-->
+                                                        <!-- End Quantity -->
+                                                        <!-- End Checkboxes Option 2 -->
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div class="row">
+                                                <div class="col-5 d-flex align-items-stretchz align-items-center">
+                                                    <!-- Checkboxes Option 2 -->
+                                                    <label class="form-check-inline u-check g-pl-25">
+                                                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="">
+                                                        <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                                                            <i class="fa" data-check-icon=""></i>
+                                                        </div>
+                                                        Change Date
+                                                    </label>
+                                                    <!-- End Checkboxes Option 2 -->
+                                                </div>
+                                                <div class="col-7">
+                                                    <!-- Select Single Date -->
+                                                    <!--<div class="form-group g-mb-30z">-->
+                                                    <!--<label class="g-mb-10">Select single date</label>-->
+                                                    <span class="input-group g-brd-primary--focus">
+                                                        <input id="datepickerDefault" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0 w-25z g-z-index-9999" type="text">
+                                                        <div class="input-group-addon d-flex align-items-center g-bg-white g-color-gray-dark-v5 rounded-0">
+                                                            <i class="icon-calendar"></i>
+                                                        </div>
+                                                    </span>
+                                                    <!--</div>-->
+                                                    <!-- End Select Single Date -->
                                                 </div>
                                             </div>
                                         </div>
-                                    <!--</div>-->
-                                    <!-- End Quantity -->
-                                    <!-- End Checkboxes Option 2 -->
+                                        <div class="col-6">
+                                            <!-- Checkboxes Option 2 -->
+                                            <label class="form-check-inline u-check g-pl-25">
+                                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="">
+                                                <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                                                    <i class="fa" data-check-icon=""></i>
+                                                </div>
+                                                Ask a Question
+                                            </label>
+                                            <!-- End Checkboxes Option 2 -->
+                                            <textarea id="inputGroup2_1" class="form-control form-control-md g-resize-none rounded-0" rows="3" placeholder=""></textarea>
+                                            <button type="button" class="btn btn-primary btn-lg btn-block g-mr-10 g-my-15">Request Changes</button>
                                         </div>
                                     </div>
-                                </form>
-                                <div class="row">
-                                    <div class="col-5 d-flex align-items-stretchz align-items-center">
-                                        <!-- Checkboxes Option 2 -->
-                                        <label class="form-check-inline u-check g-pl-25">
-                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="">
-                                            <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
-                                                <i class="fa" data-check-icon=""></i>
-                                            </div>
-                                            Change Date
-                                        </label>
-                                        <!-- End Checkboxes Option 2 -->
-                                    </div>
-                                    <div class="col-7">
-                                        <!-- Select Single Date -->
-                                        <!--<div class="form-group g-mb-30z">-->
-                                        <!--<label class="g-mb-10">Select single date</label>-->
-                                        <span class="input-group g-brd-primary--focus">
-                                            <input id="datepickerDefault" class="form-control form-control-md u-datepicker-v1 g-brd-right-none rounded-0 w-25z g-z-index-9999" type="text">
-                                            <div class="input-group-addon d-flex align-items-center g-bg-white g-color-gray-dark-v5 rounded-0">
-                                                <i class="icon-calendar"></i>
-                                            </div>
-                                        </span>
-                                        <!--</div>-->
-                                        <!-- End Select Single Date -->
-                                    </div>
+
+
+
+
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <!-- Checkboxes Option 2 -->
-                                <label class="form-check-inline u-check g-pl-25">
-                                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="">
-                                    <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
-                                        <i class="fa" data-check-icon=""></i>
-                                    </div>
-                                    Ask a Question
-                                </label>
-                                <!-- End Checkboxes Option 2 -->
-                                <textarea id="inputGroup2_1" class="form-control form-control-md g-resize-none rounded-0" rows="3" placeholder=""></textarea>
-                                <button type="button" class="btn btn-primary btn-lg btn-block g-mr-10 g-my-15">Request Changes</button>
-                            </div>
+                            <!-- End Card -->
                         </div>
+
+
+
+
+
+
+
                     </div>
                     <!-- End Demo modal window -->
 
